@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!--head-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>微分の典型5題完全解説!</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+onload="renderMathInElement
+(document.body);"></script>
+</head>
+<!--/head-->
+
+<!--body-->
+<body>
+    <header>
+        <h1>微分の典型5題完全解説!</h1>
+    </header>
+
+    <!--ナビ-->
+    <nav class="side-nav">
+        <h6>問題ナビ</h6>
+        <a href="index.html">Top</a>
+        <a href="question1.html">問題1</a>
+        <a href="question2.html">問題2</a>
+        <a href="question3.html">問題3</a>
+        <a href="question4.html">問題4</a>
+        <a href="question5.html">問題5</a>
+        
+    </nav>  
+
+    <main>
+
+        <!-- 問題 -->
+        <section class="problem">
+            
+            <img src="pngFile/chibaInd_2003.png" width="100%" height="100%">           
+        </section>
+
+        <!-- 広告 -->
+         <div class="ad">
+            広告スペース
+        </div>
+
+        <!--重要ポイント-->
+        <section class="point">
+            <h2>重要ポイント</h2>
+            <p>定数を分離することで、
+                <span class="math">$$ y = k, y = x^3 + \frac{3}{2}x^2 $$</span>
+                即ち、ただの直線と三次関数のグラフの共有点の関係を考えればよくなる。
+
+            </p>
+            
+        </section>
+        
+        
+        
+        <!-- 解説 -->
+        <section class="solution">
+            <h2>解説</h2>
+            
+            
+            <h2></h2>
+            <p>\( f(x) = 0 \)とすると、
+                <span class="math">$$ x^3 + \frac{3}{2}x^2 - k = 0 $$</span>
+                <span class="math">$$ x^3 + \frac{3}{2}x^2 = k $$</span>
+
+                ここで左辺を、
+                <span class="math">$$ g(x) = x^3 + \frac{3}{2}x^2 $$</span>
+                とする。
+                <br>\( y = g(x) \)と\( y = k \)が異なる３つの実数解を持てばよい。
+                <br>\( g(x) \)を微分すると、
+                <span class="math">$$ g'(x) = 3x^2 + 3x $$</span>
+                <span class="math">$$ = 3x(x + 1) $$</span>
+                従って以下の増減表が得られる。
+                <table class="math">
+                $$
+                <tr>
+                    <th>\(x\)</th>
+                    <th></th>
+                    <th> \( -1 \) </th>
+                    <th></th>
+                    <th> \( 0 \) </th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>\( g'(x) \)</th>
+                    <td>+</td>
+                    <td>0</td>
+                    <td>-</td>
+                    <td>0</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <th>\( g(x) \)</th>  
+                    <td>↗</td>
+                    <td>\( f(-1) \) </td>
+                    <td>↘</td>
+                    <td> \( f(0) \) </td>
+                    <td>↗</td>
+                </tr>
+                $$
+                </table>
+
+                \( f(-1) = \frac{1}{2}, f(0) = 0 \)より、
+                以下のようなグラフになる。
+
+                <img src="pngFile/y = x^3 + fra{3}{2}x^2.png" width="100%" height="100%">
+
+                グラフから、\( y = g(x) \)と\( y = k \)が３つの異なる共有点を持つとき、
+
+                <span class="math">$$ 0 < k < \frac{1}{2} $$</span>
+
+            </p>
+            
+        </section>
+
+        <!--講評-->
+        <section class="summary">
+
+            <h2>全体まとめ</h2>
+            <p>異なる3つの実数解を持つときの定数の範囲を考える問題。考えるべきは、
+                <span class="math">$$ 定数分離→グラフ $$</span>
+                これは実数解の数が何個だろうと変わらない。
+                定数分離をする理由は、
+                <span class="math">$$ 複雑な曲線の固定とグラフの単純化 $$</span>
+                である。定数分離をすると大抵は、<span class="bold-txt">固定された曲線と直線の共有点の数</span> を考えればよくなるので、
+                より直感的に理解することができる。
+                <br>定数分離をしなくても解くことは可能。これもやはり<span class="bold-txt">グラフ的に</span>考えることになる。三次関数が異なる３つの実数解を持つとき、
+                <span class="math">$$ (極大値) > 0 , (極小値) < 0 $$</span>
+                を満たせばよい。これは簡単な三次関数のグラフなので考えやすいが、複雑な関数のときはグラフを描くことも難しくなるので定数分離することをお勧めする。
+            </p>
+            
+        </section>
+
+    </main>
+
+<footer>
+    <a href="privacy-policy.html">プライバシーポリシー.</a>
+<p>(C)2026 スッキリ数学ラボ.</p>
+</footer>
+
+</body>
+</html>
