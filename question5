@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!--head-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>微分の典型5題完全解説!</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+onload="renderMathInElement
+(document.body);"></script>
+</head>
+<!--/head-->
+
+<!--body-->
+<body>
+    <header>
+        <h1>微分の典型5題完全解説!</h1>
+    </header>
+
+    <!--ナビ-->
+    <nav class="side-nav">
+        <h6>問題ナビ</h6>
+        <a href="index.html">Top</a>
+        <a href="question1.html">問題1</a>
+        <a href="question2.html">問題2</a>
+        <a href="question3.html">問題3</a>
+        <a href="question4.html">問題4</a>
+        <a href="question5.html">問題5</a>
+        
+    </nav>
+
+    <main>
+
+        <!-- 問題 -->
+        <section class="problem">
+            
+            <img src="pngFile/tohoku_2010_5.png" width="100%" height="100%"> 
+            <p>
+                
+            </p>           
+        </section>
+
+        <!-- 広告 -->
+         <div class="ad">
+            広告スペース
+        </div>
+
+        <!--重要ポイント-->
+        <section class="point">
+            <h2>重要ポイント</h2>
+            <p>ある点\( P \)から曲線へ引く接線の本数に関する問題。
+                <span class="bold-txt">接点と接線の数が\( 1:1 \)</span>で対応しているので、接点の数だけ接線が存在する。つまり接点が３つ存在すればよい。
+                接線の式に通る点\( P \)を代入することで\( a, b, t \)の方程式ができるので、
+                <span class="math">$$ tを変数としてみる三次方程式 $$</span>
+                と考え、この三次方程式が<span class="bold-txt">解を三つ持つ条件</span>を考えることになる。
+
+            </p>
+            
+        </section>
+        
+        
+        
+        <!-- 解説 -->
+        <section class="solution">
+            <h2>解説</h2>
+            
+            
+            <h2></h2>
+            <p>曲線\( C \)上の点を実数\( t \)を用いて\( (t, t^3 - a^2x + a^3) \)とする。ここで、
+                <span class="math">$$ y' = 3x^2 - a^2 $$</span>
+                であるから接線の方程式は、
+                <span class="math">$$ y = (3t^2 - a^2)(x - t) + t^3 - a^2x + a^3 $$</span>
+                <span class="math">$$ = (3t^2 - a^2)x -2t^3 + a^3 $$</span>
+                この直線が点\( P(b, 0) \)を通るので、
+                <span class="math">$$ 0 = (3t^2 - a^2)b -2t^3 + a^3 $$</span>
+                <span class="math">$$ 2t^3 - 3bt^2 - a^3 + a^2b = 0 $$</span>
+                ここで、\( (左辺) = f(t) \)とする。
+                接線と接点は\( 1:1 \)で対応しているので接点の数と接線の本数は等しい。接点の数は\( t \)の数と等しい。
+                つまり、\( f(t) = 0 \)が異なる３つの実数解を持てばよい。
+
+                <span class="math">$$ f'(t) = 6t^2 - 6bt $$</span>
+                <span class="math">$$ = 6t(t - b) $$</span>
+                従って以下のような増減表が得られる
+                <table class="math">
+                $$
+                <tr>
+                    <th>\(t\)</th>
+                    <th></th>
+                    <th> \( 0 \) </th>
+                    <th></th>
+                    <th> \( b \) </th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>\( f'(t) \)</th>
+                    <td>+</td>
+                    <td>0</td>
+                    <td>-</td>
+                    <td>0</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <th>\( f(t) \)</th>  
+                    <td>↗</td>
+                    <td>\( f( 0) \) </td>
+                    <td>↘</td>
+                    <td> \( f(b ) \) </td>
+                    <td>↗</td>
+                    
+                </tr>
+                $$
+                </table>
+
+                \( f(t) \)が３つの異なる実数解を持つとき、
+                <span class="math">$$ f(0) > 0 , f(b) < 0 $$</span>
+                を満たせばよい。
+                <span class="math">$$ f(0) = -a^3 + a^2b , f(b) = -b^3 - a^3 + a^2b $$</span>
+                であるから、
+                <span class="math">$$ \
+                    \begin{cases}
+                    a^2b - a^3 > 0 \\
+                    -b^3 + a^2b - a^3 < 0
+                    \end{cases}
+                    $$
+                </span>
+                <span class="math">$$ ⇔ \
+                    \begin{cases}
+                    a^2(b - a) > 0 \\
+                    b^3 - a^2b + a^3 > 0
+                    \end{cases}
+                    $$
+                </span>
+
+                \( a^2 > 0 \)より\( b - a > 0 \)であるから 、
+                <span class="math">$$ \
+                    \begin{cases}
+                    b > a \\
+                    b^3 - a^2b + a^3 > 0
+                    \end{cases}
+                    $$
+                </span>
+
+                \( b > a > 0 \)のとき第２式は、
+                <span class="math">$$ b^3 - a^2b + a^3 = b(b^2 - a^2) + a^3 > 0 $$</span>
+                つまり常に成り立つ。
+                従って、
+                <span class="math">$$ b > a > 0 $$</span>
+                これを\( ab \)平面に図示すると、以下のようになる
+
+                <img src="pngFile/y = x.png" width="100%" height="100%">
+                <br>境界線はなし
+
+            </p>
+            
+        </section>
+
+        <!--講評-->
+        <section class="summary">
+
+            <h2>全体まとめ</h2>
+            <p>接線の本数問題。接線の数と接点の数は<span class="bold-txt">1:1に対応</span>しているので、
+                <span class="math">$$接点の数を考える問題$$</span>
+                に帰着させることができる。接点を\( t \)でおき接線の式を立てると、
+                <span class="math">$$ tについての三次方程式 $$</span>
+                を立てることができる。これが<span class="bold-txt">３つの異なる解</span>を持つ条件を考える。
+
+                <br>三次関数が<span class="bold-txt">異なる三つの実数解</span>を持つとき、
+                <span class="math">$$ (極小値) < 0 , (極大値) > 0 $$</span>
+                が条件となる。ここから\( a, b \)の関係式を立てることとなる。
+                <br>この問題は今回解説した問題を多くの要素を持っているので人に説明できるレベルまで習得することが大切。
+
+            </p>
+            
+        </section>
+
+    </main>
+
+<footer>
+    <a href="privacy-policy.html">プライバシーポリシー.</a>
+<p>(C)2026 スッキリ数学ラボ.</p>
+</footer>
+
+</body>
+</html>
