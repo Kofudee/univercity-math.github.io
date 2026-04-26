@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!--head-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>微分の典型5題完全解説!</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+onload="renderMathInElement(document.body);"></script>
+</head>
+<!--/head-->
+
+<!--body-->
+<body>
+    <header>
+        <h1>微分の典型5題完全解説!</h1>
+    </header>
+
+    <!--ナビ-->
+    <nav class="side-nav">
+        <h6>問題ナビ</h6>
+        <a href="index.html">Top</a>
+        <a href="question1.html">問題1</a>
+        <a href="question2.html">問題2</a>
+        <a href="question3.html">問題3</a>
+        <a href="question4.html">問題4</a>
+        <a href="question5.html">問題5</a>
+        
+    </nav>
+
+    <main>
+
+        <!-- 問題 -->
+        <section class="problem">
+            
+            <img src="pngFile/kobe_2025_3.png" width="100%" height="100%"> 
+            <p>
+                
+            </p>           
+        </section>
+
+        <!-- 広告 -->
+         <div class="ad">
+            広告スペース
+        </div>
+
+        <!--重要ポイント-->
+        <section class="point">
+            <h2>重要ポイント</h2>
+            <p>(1)グラフの概形を描くためには、
+                <span class="math">$$ 増減表を描く $$</span>
+                つまり微分することを考える。ただ、絶対値を外す必要がある。
+                <br><span class="bold-txt">絶対値のある関数</span> のグラフを描くときの考え方は以下の二つ。
+                <span class="math">
+                    $$ \
+                    \begin{aligned}
+                    式全体に絶対値 &→ 絶対値なしのグラフを描き折り返す \\
+                    項に絶対値 &→ 項の符号によって場合分けをする
+                    \end{aligned}
+                    \ 
+                    $$
+                </span>
+            
+                今回は前者である。
+
+                <br>(2)
+                <span class="math">$$ 共有点が4つ $$</span>
+                が、どのような状況であるかをグラフから考える。<span class="bold-txt">共有点の数問題</span>を考えるときは以下の三つを意識。
+                <span class="math">
+                    $$ \
+                    \begin{cases}
+                    直線と曲線が接している \\
+                    直線と曲線が交点を持つ \\
+                    直線と曲線が交点を持たない
+                    \end{cases}
+                    \ 
+                    $$
+                </span>
+
+            </p>
+            
+        </section>
+        
+        
+        
+        <!-- 解説 -->
+        <section class="solution">
+            <h2>解説</h2>
+            
+            <h2>(1)</h2>
+            <p>\( f_0(x) = x^3 - x \)とすると、
+                <span class="math">$$ f_0'(x) = 3x^2 - 1 $$</span>
+                <span class="math">$$  = 3(x - \frac{ \sqrt{3} }{3})(x + \frac{ \sqrt{3} }{3}) $$</span>
+                従って以下の表が得られる。
+                <table class="math">
+                $$
+                <tr>
+                    <th>\(x\)</th>
+                    <th></th>
+                    <th> \( -\frac{ \sqrt{3} }{3} \) </th>
+                    <th></th>
+                    <th> \( \frac{ \sqrt{3} }{3} \) </th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>\( f_0'(x) \)</th>
+                    <td>+</td>
+                    <td>0</td>
+                    <td>-</td>
+                    <td>0</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <th>\( f_0(x) \)</th>  
+                    <td>↗</td>
+                    <td>\( f( -\frac{ \sqrt{3} }{3} ) \) </td>
+                    <td>↘</td>
+                    <td> \( f( \frac{ \sqrt{3} }{3} ) \) </td>
+                    <td>↗</td>
+                    
+                </tr>
+                $$
+                </table>
+
+                以上の表から以下のグラフが得られる。
+
+                <img src="pngFile/y = x^3 - x.png" width="90%" height="90%">
+
+                <br>\( y = f(x) \)の式は\( y = f_0(x) \)のグラフの\( y ≦ 0 \)の部分を折り返したものなので、\( y = f(x) \)のグラフは、
+
+                <img src="pngFile/y = 1x^3 - x1.png" width="90%" height="90%">
+
+                <br>のようになる。
+            </p>
+
+            <h2>(2)</h2>
+            <p>直線\( l \)は、点\( (-1, 0) \)を通る傾きが\( k \)の直線である。
+                直線\( l \)と曲線\( C \)が四つの共有点を持つとき、直線は右側の山で接する、つまり
+                <span class="math">$$ 直線lが 0 < x < 1 で接する $$</span>
+                ときである。\(0 < x < 1\)において、\( f(x) \)は、
+                <span class="math">$$ f(x) = -x^3 + x $$</span>
+                である。接点を\( (t, -t^3 + t)(0 < t < 1) \)とすると接線の式は、
+                <span class="math">$$ y = (-3t^2 + 1)(x - t) -t^3 + t $$</span>
+                <span class="math">$$ = (-3t^2 + 1)x + 2t^3 $$</span>
+                これが\( (-1, 0) \)を通るので、
+                <span class="math">$$ 0 = -(-3t^2 + 1) + 2t^3 $$</span>
+                <span class="math">$$ 2t^3 + 3t^2 - 1 = 0 $$</span>
+                \( t = -1 \)で\( (左辺) = 0 \)になるので因数定理より、
+                <span class="math">$$ (t + 1)(2t^2 + t - 1) = 0 $$</span>
+                <span class="math">$$ ⇔ (t + 1)^2(2t - 1) = 0 $$</span>
+                \( (0 < t < 1) \)より、
+                <span class="math">$$ t = \frac{1}{2} $$</span>
+
+                \( t = \frac{1}{2} \)のとき、
+                <span class="math">$$ (傾き) = \frac{1}{4} $$</span>
+                したがって、
+                <span class="math">$$ k = \frac{1}{4} $$</span>
+
+            </p>
+            
+        </section>
+
+        <!--講評-->
+        <section class="summary">
+
+            <h2>全体まとめ</h2>
+            <p>グラフを書くためには、
+                <span class="math">$$ 増減表を描く $$</span>
+                ことが目標となる。ただ今回のように絶対値がついているときは外さなければならない。
+                <br>外し方は以下の通り。
+
+                <span class="math">
+                    $$ \
+                    \begin{aligned}
+                    式全体に絶対値 &→ 絶対値なしのグラフを描き折り返す \\
+                    項に絶対値 &→ 項の符号によって場合分けをする
+                    \end{aligned}
+                    \ 
+                    $$
+                </span>
+
+                今回は前者の良い例。後者の例は以下のようなものである。
+                <span class="math">$$ y = x^2 + |x - 3| - 12 $$</span>
+                このような関数のグラフを描くときは、
+                <span class="math">
+                    $$ \
+                    \begin{cases}
+                    (ⅰ) &x - 3 < 0 ⇔ x < 3 \\
+                    (ⅱ)&x - 3 ≧ 0 ⇔ x ≧ 3
+                    \end{cases}
+                    \ 
+                    $$
+                </span>
+
+                で場合分けをする。
+
+                <br>(2)共有点や最大最小問題は基本的に、
+                <span class="math">$$ 増減表 または グラフ $$</span>
+                を描くと考えやすい。今回もグラフを描くことで<span class="bold-txt">共有点４つの条件</span>である、
+                <span class="math">$$ 接すること $$</span>
+                に気づきやすくなるだろう。
+
+                <br>接線を考えるときは、
+                <span class="math">$$ 曲線の接線をたてる → 係数比較 $$</span>
+                が基本となる。接点を\( t \)でおき、その接点における接線の式を立てる。
+                この接線と直線が一致するときを考えることになる。
+                <br>接線問題はかなり頻出であるので流れを完全に把握しておくとよいだろう。
+
+            </p>
+            
+        </section>
+
+    </main>
+
+<footer>
+    <a href="privacy-policy.html">プライバシーポリシー.</a>
+<p>(C)2026 スッキリ数学ラボ.</p>
+</footer>
+
+</body>
+</html>
