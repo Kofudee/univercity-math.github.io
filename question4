@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!--head-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>微分の典型5題完全解説!</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+onload="renderMathInElement(document.body);"></script>
+</head>
+<!--/head-->
+
+<!--body-->
+<body>
+    <header>
+        <h1>微分の典型5題完全解説!</h1>
+    </header>
+
+    <!--ナビ-->
+    <nav class="side-nav">
+        <h6>問題ナビ</h6>
+        <a href="index.html">Top</a>
+        <a href="question1.html">問題1</a>
+        <a href="question2.html">問題2</a>
+        <a href="question3.html">問題3</a>
+        <a href="question4.html">問題4</a>
+        <a href="question5.html">問題5</a>
+        
+    </nav>
+
+    <main>
+
+        <!-- 問題 -->
+        <section class="problem">
+            
+            <img src="pngFile/waseda_2002_4.png" width="100%" height="100%"> 
+            <p>
+                
+            </p>           
+        </section>
+
+        <!-- 広告 -->
+         <div class="ad">
+            広告スペース
+        </div>
+
+        <!--重要ポイント-->
+        <section class="point">
+            <h2>重要ポイント</h2>
+            <p>関数\( f(x), g(x) \) どうしが\( x = t \) 接するとき、
+                <span class="math">$$\
+
+                    \begin{cases}
+                    f(t) = g(t) \\
+                    f'(t) = g'(t)
+                    \end{cases} 
+                    \ $$
+                </span>
+                が成り立つ。この二つの等式と<span class="bold-txt">問題中の条件</span>から解いていく。
+
+            </p>
+            
+        </section>
+        
+        
+        
+        <!-- 解説 -->
+        <section class="solution">
+            <h2>解説</h2>
+            
+            <h2></h2>
+            <p>\( C_1, C_2 \)をそれぞれ\( f(x), g(x) \)とする。接点の\( x \)座標を\( t (t > 0) \)
+                と置くと、
+                <span class="math">$$ \
+                    \begin{cases}
+                    t^3 + at + 3 = t^2 + b &- ① \\
+                    3t^2 + a = 2t &- ②
+                    \end{cases}
+                    \
+                    $$
+                </span>
+
+                また、\( (t, f(t)) \)の接線は、
+                <span class="math">$$ y = (3t^2 + a)(x - t) + t^3 + at + 3 $$</span>
+                <span class="math">$$ = (3t^2 + a)x -2t^3 + 3 - ③ $$</span>
+                \( (t, g(t)) \)の接線は、
+                <span class="math">$$ y = 2t(x - t) + t^2 + b $$</span>
+                <span class="math">$$ = 2tx -t^2 + b - ④ $$</span>
+                \( ③,④ \)式は、\( (0, -a) \)を通るので、
+                <span class="math">$$ \
+                    \begin{cases}
+                    -2t^3 + 3 = -a \\
+                    -t^2 + b = -a 
+                    \end{cases}
+                    \ $$
+                </span>
+                <span class="math">$$ ⇔ \
+                    \begin{cases}
+                    a = 2t^3 - 3 - ③'\\
+                    -t^2 + a + b = 0 - ④'
+                    \end{cases}
+                    \ $$
+                </span>
+
+                \(③'を②\)に代入して、
+                <span class="math">$$ 3t^2 + 2t^3 - 3 = 2t $$</span>
+                <span class="math">$$ 2t^3 + 3t^2 - 2t - 3 = 0 $$</span>
+                \( t = 1 \)を解に持つので因数定理より、
+                <span class="math">$$ (t - 1)(2t^2 + 5t + 3) = 0 $$</span>
+                <span class="math">$$ ⇔ (t - 1)(2t + 3)(t + 1) = 0 $$</span>
+                \( t > 0 \)から、
+                <span class="math">$$ ⇔ t = 1 $$</span>
+
+                ③'に\( t = 1 \)を代入して、
+                
+                <span class="math">$$ a = -1 $$</span>
+                このとき④'から、
+                <span class="math">$$ b = 2 $$</span>
+
+                従って接線の方程式は、
+                <span class="math">$$ y = 2x - 1 + 2 $$</span>
+                <span class="math">$$ = 2x + 1 $$</span>
+
+                よって、
+                <span class="math">$$ (a, b) = (-1, 2), 接線は y = 2x + 1 $$</span>
+
+            </p>
+            
+        </section>
+
+        <!--講評-->
+        <section class="summary">
+
+            <h2>全体まとめ</h2>
+            <p>数学の問題は、
+                <span class="math">$$ 小ゴールを立てる → 解き進める $$</span>
+                の順番がセオリーだがこの問題はそれができない。なので、与えられている条件から\( a, b, 接線の式 \)
+                を考えていく。
+                <br>今回与えられた条件は、
+                <span class="math">$$ \
+                    \begin{cases}
+                    C_1, C_2が第一象限内で接線を共有する \\
+                    接線Lは(0, -a)を通る 
+                    \end{cases}
+                    \ $$
+                </span>
+
+                の二つ。
+                <br>前者からは、「重要ポイント」でも書いたように、
+                <span class="math">$$\
+                    \begin{cases}
+                    f(t) = g(t) \\
+                    f'(t) = g'(t)
+                    \end{cases} 
+                    \ $$
+                </span>
+
+                が成り立つ。
+                また、接線を共有するので、
+                <span class="math">$$ (C_1の接線) = (C_2の接線) $$</span>
+                が成り立つので<span class="bold-txt">係数比較</span>により関係式を立てる。
+                後者は立てた接線の式に代入して考えていくこととなる。
+
+                <br>以上を整理していくと、大きく４つの等式が出てくるので連立して求めることができる。
+                
+            </p>
+            
+        </section>
+
+    </main>
+
+<footer>
+    <a href="privacy-policy.html">プライバシーポリシー.</a>
+<p>(C)2026 スッキリ数学ラボ.</p>
+</footer>
+
+</body>
+</html>
