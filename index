@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!--head-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>微分の典型5題完全攻略</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+onload="renderMathInElement(document.body);"></script>
+</head>
+<!--/head-->
+
+<!--body-->
+<body>
+    <header>
+        <h1>微分の典型5題完全攻略【大学入試】</h1>
+    </header>
+
+    <nav class="side-nav">
+        <h6>問題ナビ</h6>
+        <a href="index.html">Top</a>
+        <a href="question1.html">問題1</a>
+        <a href="question2.html">問題2</a>
+        <a href="question3.html">問題3</a>
+        <a href="question4.html">問題4</a>
+        <a href="question5.html">問題5</a>
+        
+    </nav>
+
+    <main>
+
+
+        <section class="lineup">
+            <h2>◆得られること</h2>
+            <p>微分(数Ⅱ)の、
+                <ul>
+                    <li><span class="bold-txt">典型問題の解法</span>をパターンで判断</li>
+                    <li><span class="bold-txt">難しい問題に出会った時の考え方</span></li>
+                    <li>解法を<span class="bold-txt">再現する力</span> </li>
+                </ul>
+                をマスターできます。数Ⅱの微分を扱うので文系数学を使用する方にもおすすめです。
+
+                <h2>◆おすすめの読み方</h2>
+                <p>解説ページの構成は、
+                    <span class="math">$$ 問題 → 重要ポイント → 解説 → まとめ $$</span>
+                    です。まずは自分で問題を解いてみましょう。詰まったらポイント、解説の順にみていきます。
+                    <br>解き終わったら、
+                    <span class="math">$$ どこで詰まり、何が抜けていたのか $$</span>
+                    を確認しましょう。最後にまとめで全体の復習をしましょう。
+                </p>
+            </p>
+
+        </section>
+
+        <!-- 広告 -->
+         <div class="ad">
+            広告スペース
+        </div>
+
+
+        <!-- 問題 -->
+        <section class="lineup" id="problem1">
+
+            <h2>◆ラインナップ</h2>
+            <p>解説する問題は以下の通りです。クリックすると解説ページに飛ぶことができます。
+                <a href="question1.html"><img class="png-problem" src="pngFile/shinsyu_2025_3.png" width="100%" height="100%"></a>
+                <h4>内容</h4>
+                <p>関数の最大最小の超基本問題。難易度はかなり低めであるが最大最小問題の基本を確認するのに最適。</p>
+
+                <a href="question2.html"><img class="png-problem" src="pngFile/chibaInd_2003.png" width="100%" height="100%"></a>
+                <h4>内容</h4>
+                <p>実数解の数による定数の範囲を考える問題。 グラフ的に考えるのがベスト。あるポイントを忘れてはいけない。</p>
+
+                <a href="question3.html"><img class="png-problem" src="pngFile/kobe_2025_3.png" width="100%" height="100%"></a>
+                <h4>内容</h4>
+                <p>絶対値付きの関数のグラフを描く問題と共有点が4つである条件を考える問題。問題がどんな条件に言い換えられるか、グラフ的に考えることが大事。</p>
+
+                <a href="question4.html"><img class="png-problem" src="pngFile/waseda_2002_4.png" width="100%" height="100%"></a>
+                <h4>内容</h4>
+                <p>関数同士が共有している接線の問題。条件を式に表し整理できるかが重要。</p>
+
+                <a href="question5.html"><img class="png-problem" src="pngFile/tohoku_2010_5.png" width="100%" height="100%"></a>
+                <h4>内容</h4>
+                <p>ある点から引く接線の本数問題。総合的な問題なのでぜひ最後に解いてほしい。</p>
+
+            </p>
+
+        </section>
+
+    </main>
+
+<footer>
+    <a href="privacy-policy.html">プライバシーポリシー.</a>
+<p>(C)2026 スッキリ数学ラボ.</p>
+</footer>
+
+</body>
+</html>
