@@ -1,0 +1,147 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+font-family: "Yu Gothic", sans-serif;
+margin:0;
+background:#f5f5f5;
+}
+
+/* ヘッダー */
+
+header{
+background:#2c3e50;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+/* メイン */
+
+main{
+max-width:800px;
+margin:auto;
+padding:20px;
+}
+
+/* 問題 */
+
+.problem{
+background:white;
+padding:20px;
+border-left:5px solid #3498db;
+margin-bottom:30px;
+}
+
+/* 解説 */
+
+.solution{
+background:white;
+padding:20px;
+border-left:5px solid #27ae60;
+margin-bottom:30px;
+}
+
+/* 数式 */
+
+.math{
+font-size:1.2em;
+text-align:center;
+margin:20px 0;
+}
+
+/* 広告 */
+
+.ad{
+background:#ddd;
+text-align:center;
+padding:40px;
+margin:30px 0;
+}
+
+/* フッター */
+
+footer{
+text-align:center;
+padding:20px;
+color:#666;
+}
+
+.summary{
+    background:white;
+    padding:20px;
+    border-left:5px solid #25deb6;
+    margin-bottom:30px;
+}
+
+.point{
+    background:white;
+    padding:20px;
+    border-left:5px solid #c01414;
+    margin-bottom:30px;
+}
+
+.bold-txt{
+    font-weight: bold;
+}
+
+.side-nav {
+  position: fixed;
+  right: 80px;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-nav a {
+  margin: 5px 0;
+  text-decoration: none;
+  color: blue;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th {
+  background-color: #f0f4ff;
+}
+
+td, th {
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+.problem-make{
+  background:white;
+  padding:20px;
+  margin-bottom:30px;
+}
+
+.lineup{
+  background:white;
+  padding:20px;
+  border-left:5px solid #17137d;
+  margin-bottom:30px;
+}
+
+.png-problem{
+  margin-top: 60px;
+  background-color: #ddd;
+}
+
+/* スマホ */
+
+@media(max-width:600px){
+
+main{
+padding:10px;
+}
+
+.math{
+font-size:1.1em;
+}
+
+}
